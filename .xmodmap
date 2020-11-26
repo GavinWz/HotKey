@@ -1,0 +1,47 @@
+!-- xmodmap ~/.Xmodmap --!
+! Caps_Lock -> Mode_switch
+clear  lock
+add    mod5 = Caps_Lock
+keycode  66 = Mode_switch
+
+! Caps_Lock + space -> Escape
+keycode  65 = space NoSymbol Escape
+
+! Caps_Lock + r     -> Menu
+keycode  27 = r R Menu
+
+! Caps_Lock + ,     -> Delete
+keycode  59 = comma less Delete
+
+! Caps_Lock + m     -> BackSpace
+keycode  58 = m M BackSpace
+
+! Caps_Lock + y     -> Prior
+!keycode  29 = y Y Prior
+keycode  30 = u U Prior
+
+! Caps_Lock + p     -> Next
+keycode  33 = p P Next
+
+! Caps_Lock + i     -> Up
+!keycode  31 = i I Up
+keycode  45 = k K Up
+
+! Caps_Lock + k     -> Down
+!keycode  45 = k K Down
+keycode  44 = j J Down
+
+! Caps_Lock + j     -> Left
+!keycode  44 = j J Left
+keycode  43 = h H Left
+
+! Caps_Lock + l     -> Right
+keycode  46 = l L Right
+
+! Caps_Lock + h     -> Home
+!keycode  43 = h H Home
+keycode  31 = i I Home
+
+! Caps_Lock + ;     -> End
+keycode  47 = semicolon colon Caps_Lock
+keycode  32 = o O End
