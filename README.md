@@ -39,6 +39,7 @@ CapsLock + u: 页首
 CapsLock + p: 页尾
 CapsLock + u: 行首
 CapsLock + o: 行尾
+CapsLock + ;: 切换大小写
 ```
 ## 源文件
 
