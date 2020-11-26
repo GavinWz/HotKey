@@ -47,7 +47,7 @@ CapsLock + ;: 切换大小写
 
 ```
 ;=====================================================================o
-;                   Feng Ruohang's AHK Script                         | 
+;                   Gavin Yang's AHK Script                         | 
 ;                      CapsLock Enhancement                           |
 ;---------------------------------------------------------------------o
 ;Description:                                                         |
