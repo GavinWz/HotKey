@@ -289,8 +289,20 @@ CapsLock & c:: Send, ^c                                              ;|
 CapsLock & v:: Send, ^v                                              ;|
 CapsLock & a:: Send, ^a                                              ;|
 CapsLock & y:: Send, ^y                                              ;|
-CapsLock & w:: Send, ^{Right}                                        ;|
-CapsLock & b:: Send, ^{Left}                                         ;|
+;---------------------------------------------------------------------o
+CapsLock & w::                                                       ;|
+if GetKeyState("alt") = 0                                            ;|
+    Send, ^{Right}                                                    ;|
+else                                                                 ;|
+    Send, ^+{Right}                                                   ;|
+return                                                               ;|
+;---------------------------------------------------------------------o
+CapsLock & b::                                                       ;|
+if GetKeyState("alt") = 0                                            ;|
+    Send, ^{Left}                                                    ;|
+else                                                                 ;|
+    Send, ^+{Left}                                                   ;|
+return                                                               ;|
 ;---------------------------------------------------------------------o
 
 
@@ -320,7 +332,7 @@ CapsLock & F6:: Send, {Media_Stop}                                   ;|
 ;                     CapsLock + q  |  Ctrl + W   (Close Tag)        ;|
 ;   (Disabled)  Alt + CapsLock + s  |  AltTab     (Switch Windows)   ;|
 ;               Alt + CapsLock + q  |  Ctrl + Tab (Close Windows)    ;|
-;                     CapsLock + g  |  AppsKey    (Menu Key)         ;|
+;                     CapsLock + g  |  Caculator    (Menu Key)       ;|
 ;-----------------------------------o---------------------------------o
 CapsLock & s::Send, ^{Tab}                                           ;|
 ;-----------------------------------o                                ;|
@@ -335,7 +347,7 @@ else {                                                               ;|
 }                                                                    ;|
 return                                                               ;|
 ;-----------------------------------o                                ;|
-CapsLock & g:: Send, {AppsKey}                                       ;|
+CapsLock & g:: Run "Calc.exe"                                        ;|
 ;---------------------------------------------------------------------o
 
 
@@ -352,7 +364,7 @@ CapsLock & d:: Send, !d                                              ;|
 CapsLock & f:: Run "F:\Youdao\Dict\YoudaoDict.exe"                   ;|
 CapsLock & e:: Run http://bing.com/                                  ;|
 CapsLock & r:: Run Powershell                                        ;|
-CapsLock & t:: Run "C:\Users\Gavin\AppData\Local\Programs\Microsoft VS Code\Code.exe" ;|
+CapsLock & t:: Run "F:\Microsoft VS Code\Code.exe" ;|
 ;---------------------------------------------------------------------o
 
 
